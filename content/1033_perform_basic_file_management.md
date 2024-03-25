@@ -489,13 +489,13 @@ Common switches are:
 
 | switch | meanint |
 | :--- | :--- |
-| -cf `myarchive.tar` | create file named myarchive.tar |
-| -xf `myarchive.tar` | extract a file named myarchive.tar |
-| -z | compress the archive with gzip after creating it |
-| -j | compress the archive with bzip2 after creating it |
-| -v | verbose! print a lot of data about what is happening |
-| -r | append new files to the currently available archive |
-
+|  cf `myarchive.tar` | create file named myarchive.tar |
+|  xf `myarchive.tar` | extract a file named myarchive.tar |
+|  z | compress the archive with gzip after creating it |
+|  j | compress the archive with bzip2 after creating it |
+|  v | verbose! print a lot of data about what is happening |
+|  r | append new files to the currently available archive |
+-- they come without -
 > If you issue absolute paths, tar removes the starting slash \(/\) for safety reasons when creating an archive. If you want to override, use -p option.
 >
 > tar can work with tapes and other storages. That's why we use `-f` to tell it that we are working with files.
