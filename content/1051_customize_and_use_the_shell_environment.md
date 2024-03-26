@@ -190,7 +190,7 @@ Now the global profile is loaded and system will go for user specific profiles:
 
 3.3- `/home/USERNAME/.profile`
 
-> Note that only one of the 3, 4 & 5 will run. The system will go for `.bash_profile` and IF IT IS NOT THERE will try `.bash_login` and IF IT IS NOT THERE will try to run `.profile`. If any of these exists, the system wont look any further. So if you have only 4 & 5, only the 4 will be run.
+> Note that only one of the 3.1, 3.2 & 3.3 will run. The system will go for `.bash_profile` and IF IT IS NOT THERE will try `.bash_login` and IF IT IS NOT THERE will try to run `.profile`. If any of these exists, the system wont look any further. So if you have only 3.2 & 3.3, only the 3.2 will be run.
 
 At the end, the system loads:
 
