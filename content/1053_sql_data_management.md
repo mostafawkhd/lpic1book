@@ -231,7 +231,7 @@ mysql> SELECT * FROM info ORDER BY height;
 
 ### GROUP BY
 
-This will _group_ the output. Unfortunately this is not very clear. Lets see the first example:
+This will _group_ the output. Unfortunately this is not very clear. Let's see the first example:
 
 ```text
 mysql> SELECT * FROM info GROUP BY mood;
@@ -244,7 +244,7 @@ mysql> SELECT * FROM info GROUP BY mood;
 2 rows in set (0.00 sec)
 ```
 
-We've seen that we have only two `mood`s in our table: sad & happy. When `SELECT`ing all fields \(that is `*`\) from this table `GROUP BY` mood, SQL will check all the moods, shows us only ONE from each. This can be used like the `uniq` command you leaned from LPIC101:
+We've seen that we have only two `mood`s on our table: sad & happy. When `SELECT`ing all fields \(that is `*`\) from this table `GROUP BY` mood, SQL will check all the moods, shows us only ONE from each. This can be used like the `uniq` command you learned from LPIC101:
 
 ```text
 mysql> SELECT mood FROM info GROUP BY mood;
@@ -257,7 +257,7 @@ mysql> SELECT mood FROM info GROUP BY mood;
 2 rows in set (0.00 sec)
 ```
 
-Which gives you all available moods in the table. In real life this is not very useful and most of the times it is combined with `count`. Have a look:
+Which gives you all the available moods in the table. In real life this is not very useful and most of the times it is combined with `count`. Have a look:
 
 ```text
 mysql> SELECT count(mood), mood FROM info GROUP BY mood;
@@ -270,13 +270,13 @@ mysql> SELECT count(mood), mood FROM info GROUP BY mood;
 2 rows in set (0.00 sec)
 ```
 
-Whic counts home many rows have that specific mood. So I have 3 happy friends and one sad friend.
+Which counts home many rows have that specific mood. So I have 3 happy friends and one sad friend.
 
 > Note: `count` is not part of LPIC 105.3
 
 ### INSERT
 
-Another clear command. It adds a new row to a talbe. Say I want to add some data to phonebook:
+Another clear command. It adds a new row to a table. Say I want to add some data to phonebook:
 
 ```text
 mysql>  INSERT INTO phonebook (name, phone, email) VALUES ('ghasem', '+982112345678', '');
@@ -297,11 +297,10 @@ mysql> SELECT * FROM phonebook;
 
 ### DELETE
 
-You know it! This will DELETE from a table. But be careful of what you delete... WHERE is your fiend here:
-
-mysql&gt; DELETE FROM phonebook WHERE name = 'ghasem'; Query OK, 1 row affected \(0.01 sec\)
+You know it! This will DELETE from a table. But be careful of what you delete... WHERE is your friend here:
 
 ```text
+mysql> DELETE FROM phonebook WHERE name = 'ghasem'; Query OK, 1 row affected \(0.01 sec\)
 mysql> SELECT * FROM phonebook;
 +--------+------------------+----------------+
 | name   | email            | phone          |
