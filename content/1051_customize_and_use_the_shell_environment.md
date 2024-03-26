@@ -170,7 +170,7 @@ The shell (here bash) can be started in 3 different ways:
 
 1. When you _login_ into the shell, say after a ssh or when you site behind a terminal and login into a Linux machine. This is an interactive login session
 2. When you open a new terminal (say from a GUI env). This is also interactive but not a *login* shell.
-3. When a shell *spawns* when you run a command. Yes.. technically when you run a new command from a shell, a sup-shell starts, runs the commands and then returns back to your shell. This is called "non interactive" shell.
+3. When a shell *spawns* when you run a command. Yes.. technically when you run a new command from a shell, a sub-shell starts, runs the commands and then returns back to your shell. This is called "non interactive" shell.
 
 We will see how different default environment variables can be set in each of these modes.
 
