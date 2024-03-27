@@ -484,7 +484,7 @@ If you have a crashed / non-booting system, you can still examine its logs; if t
 You can move these files to a directory after booting the crashed machine with a live linux or mount its hard on another machine or even examine them in place. The `-D` (or `--directory`) switch of `journalctl` indicates the location of the journal files. So if your crashed machine id is `ec22e43962c64359b9b25cfa650b025b` and you've mounted its `/var/` under your `/mnt/var/` directory, you can issue this command to read its logs and see what had happened:
 
 ```
-journalctl -D=/mnt/var/log/journal/ec22e43962c64359b9b25cfa650b025b/
+journalctl -D /mnt/var/log/journal/ec22e43962c64359b9b25cfa650b025b/
 ```
 
 You can also use the `--merge` switch to merge these logs into your machine or use `--file` to check only one specific journal file. Lastly if the exact location of journal files are not known, you can use `--root /mnt` and tell the `journalctl` to search there for journal files.
