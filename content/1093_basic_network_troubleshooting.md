@@ -281,13 +281,13 @@ The `nc` \(or netcat\) utility is used for just about anything under the sun inv
 Here I'm creating a tcp listener on port 1337:
 
 ```
-jadi@debian:~$ nc -l 1337
+jadi@debian:~$ nc -lv 1337
 ```
 
 And here I'm opening a connection to that port and sending some data:
 
 ```
-jadi@debian:~$ nc localhost 1337
+jadi@debian:~$ nc -v localhost 1337
 Are you enjoying the LPIC?
 ```
 
