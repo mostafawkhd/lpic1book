@@ -242,6 +242,10 @@ To connect to a Wi-Fi network, you're a do:
 ```
 nmcli device wifi connect AxLTE password AFunkyPassword 
 ```
+you can edit also dns configs via the nmcli command 
+```
+$ sudo nmcli connection modify eth0 ipv4.dns "8.8.8.8,8.8.4.4"
+```
 
 ### Fancy Names for Computers
 
